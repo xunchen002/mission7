@@ -1,0 +1,14 @@
+version: '3'
+services: 
+  jupyter_notebook: 
+    image: qwertyui0011/base-notebook:1.0
+    container_name: mission7_container
+    ports: 
+      - "8888:8888"
+  db: 
+    image: mysql:5.7
+    container_name: mysql_container
+    ports: 
+      - "3306:3306"
+    environment: 
+      MYSQL_ROOT_PASSWORD: iii
